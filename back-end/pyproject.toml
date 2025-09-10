@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffusion-backend"
+version = "0.1.0"
+description = "Backend datasets and visualization for the diffusion project."
+requires-python = ">=3.9"
+dependencies = [
+  "torch>=2.1.0",
+  "matplotlib>=3.7.0",
+  "numpy>=1.23",
+  "tqdm>=4.65",
+  "fastapi>=0.110",
+  "uvicorn>=0.23",
+]
+
+[tool.setuptools.packages.find]
+include = ["diffusion_backend*"]

@@ -1,0 +1,4 @@
+.DS_Store
+front-end/node_modules
+back-end/diffusion_backend.egg-info
+workterm1report.html

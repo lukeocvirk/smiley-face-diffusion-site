@@ -1,0 +1,85 @@
+:root {
+  --bg: #f7f9fc;
+  --panel: #ffffff;
+  --text: #0f172a; /* slate-900 */
+  --muted: #e5e7eb; /* gray-200 */
+  --primary: #3b82f6; /* blue-500 */
+  --primary-600: #2563eb; /* blue-600 */
+  --indigo: #6366f1; /* indigo-500 */
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Cantarell, Noto Sans, Ubuntu, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+.hero {
+  background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(59,130,246,0.10));
+  border-bottom: 1px solid var(--muted);
+}
+.hero .inner { padding: 48px 24px; }
+.title { font-size: 36px; margin: 8px 0 8px; color: var(--indigo); }
+.subtitle { color: #334155; margin: 0; }
+.name { color: #6366f1; margin: 0 0 16px}
+
+.grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--muted);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.section-title { font-size: 20px; color: var(--indigo); margin: 0 0 12px; }
+
+.controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn.secondary { background: var(--indigo); }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.input, .select { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--muted); background: white; }
+.label { font-size: 12px; color: #475569; }
+
+.canvas-wrap { display: flex; justify-content: center; align-items: center; background: #fff; border: 1px solid var(--muted); border-radius: 8px; padding: 8px; }
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.footer .section-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.sources-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.sources-list a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.sources-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-credit {
+  color: #777;
+}
